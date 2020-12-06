@@ -17,7 +17,7 @@ public class IceBeamMove extends SpecialMove
         pokemon.setMod(Stat.HP, (int)Math.round(damage));
 
         //с вероятностью 10% замораживает цель
-        if(ChanceToAddEffect.chance(10)){
+        if(ChanceToAddEffect.chance(0.1)){
             Effect.freeze(pokemon);}
     }
 }
