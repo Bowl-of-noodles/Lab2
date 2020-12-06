@@ -18,7 +18,7 @@ public class BodySlamMove extends PhysicalMove
         pokemon.setMod(Stat.HP, (int)Math.round(damage));
 
         //с вероятностью 30% парализовать цель
-        if(ChanceToAddEffect.chance(30)){
+        if(ChanceToAddEffect.chance(0.3)){
             Effect.paralyze(pokemon);}
     }
 }
