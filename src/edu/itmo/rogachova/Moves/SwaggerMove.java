@@ -17,7 +17,11 @@ public class SwaggerMove extends StatusMove
     protected void applyOppEffects(Pokemon pokemon){
         //сбивает с толку противника
         Effect.confuse(pokemon);
-        //повышает аттаку противника на 2 уровня
-        pokemon.addEffect(new Effect().turns(1).stat(Stat.ATTACK, 2));
+    }
+
+    @Override
+    protected void applySelfEffects(Pokemon pokemon){
+        //повышает аттаку нападающего покемона на 2 уровня
+        pokemon.setMod(Stat.ATTACK, 2);
     }
 }
