@@ -18,7 +18,7 @@ public class HurricaneMove extends SpecialMove
         pokemon.setMod(Stat.HP, (int)Math.round(damage));
 
         //с вероятностью 30% сбивает цель с толку
-        if(ChanceToAddEffect.chance(30)){
+        if(ChanceToAddEffect.chance(0.3)){
             Effect.confuse(pokemon);}
     }
 }
