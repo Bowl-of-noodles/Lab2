@@ -18,7 +18,9 @@ public class WaterfallMove extends PhysicalMove
         pokemon.setMod(Stat.HP, (int)Math.round(damage));
 
         //с вероятностью 20% заставит цель вздрогнуть
-        if(ChanceToAddEffect.chance(0.2)){Effect.flinch(pokemon);}
+        if(ChanceToAddEffect.chance(0.2)){
+            Effect.flinch(pokemon);
+        }
 
     }
 
